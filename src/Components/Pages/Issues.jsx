@@ -14,7 +14,7 @@ function Issues() {
   const [pagesCount, setPagesCount] = useState(0);
   const [issueData, setIssueData] = useState(0);
 
-  let url = "https://api.github.com/repos/apple/cups";
+  let url = "https://api.github.com/repos/roberodin/ha-samsungtv-custom";
 
   const pullesIssues = async () => {
     let response = await axios.get(`${url}/pulls`);
@@ -113,11 +113,11 @@ function Issues() {
           <span className="text-slate-100 ">
             <GoIssueOpened size={20} />
           </span>
-          <p>{pagesCount - issueData} Open</p>
+         <p>{Math.abs(pagesCount - issueData)} Open</p>
           <span className="ml-[10px]">
             <BsCheck color="#6d848f" size={20} />
           </span>
-          <span className="text-[#6d848f] text-[14px]">5,738 Closed</span>
+          <span className="text-[#6d848f] text-[14px]">17 Closed</span>
         </div>
 
         <div
