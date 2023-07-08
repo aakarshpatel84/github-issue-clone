@@ -1,0 +1,228 @@
+.nav-top {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-top .nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-top .nav-left > div,
+.nav-top .nav-right > div {
+  cursor: pointer;
+}
+
+.nav-top .nav-left .left-first {
+  padding: 6px 5px 2.5px 5px;
+  border: 1px solid #7d8590;
+  border-radius: 5px;
+}
+
+.nav-top .nav-left > .left-third {
+  color: #e6edf3;
+  font-size: 18px;
+  display: flex;
+}
+
+.nav-top .nav-left > .left-third p:first-child {
+  white-space: nowrap;
+}
+
+.nav-top .nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-top .nav-right > .right-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px 4.5px 10px;
+  border: 1px solid #7d8590;
+  border-radius: 6px;
+}
+
+.nav-top .nav-right > .right-first-2 {
+  display: none;
+}
+
+.nav-top .nav-right .right-first input {
+  position: relative;
+  bottom: 2.5px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #e6edf3;
+  font-size: 16px;
+}
+
+.nav-top .nav-right .right-first input + p {
+  color: #7d8590;
+  position: relative;
+  bottom: 5px;
+  left: 1px;
+  padding: 0px;
+}
+
+.nav-top .nav-right .right-first input::placeholder {
+  color: #7d8590;
+}
+
+.nav-top .nav-right .right-first input:focus {
+  border: none;
+  outline: none;
+}
+
+.nav-top .nav-right .right-first > .tab {
+  padding: 6px 5px 2.5px 5px;
+  border: 1px solid #7d8590;
+  border-radius: 6px;
+}
+
+.nav-top .nav-right .right-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px 9px 10px;
+  border: 1px solid #7d8590;
+  border-radius: 6px;
+}
+
+.nav-top .nav-right .right-third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px 9px 10px;
+  border: 1px solid #7d8590;
+  border-radius: 6px;
+}
+
+.nav-top .nav-right .right-fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px 9px 10px;
+  border: 1px solid #7d8590;
+  border-radius: 6px;
+}
+
+.nav-top .nav-right .right-fifth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px 9px 10px;
+  border: 1px solid #7d8590;
+  border-radius: 6px;
+}
+
+.nav-top .nav-right .right-sixth img {
+  height: 36.5px;
+  width: 36.5px;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
+
+@media all and (max-width: 1024px) {
+  .nav-top .nav-right .right-first {
+    display: none;
+  }
+
+  .nav-top .nav-right > .right-first-2 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px 9px 10px;
+    border: 1px solid #7d8590;
+    border-radius: 6px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav-top .nav-right > .right-second,
+  .nav-top .nav-right > .right-third,
+  .nav-top .nav-right > .right-fourth {
+    display: none;
+  }
+
+  .nav-top .nav-left > .left-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .nav-top .nav-left > .left-third > p:first-child {
+    font-size: 14px;
+    color: #7d8590;
+    white-space: nowrap;
+  }
+
+  .nav-top .nav-left > .left-third > p:last-child {
+    font-size: 16px;
+  }
+
+  .nav-top .nav-right {
+    gap: 7px;
+  }
+
+  .nav-top .nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .nav-top .nav-left > .left-third {
+    font-size: 14px;
+  }
+
+  .nav-top .nav-left > .left-second {
+    display: none;
+  }
+}
+
+.nav-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-bottom::-webkit-scrollbar {
+  width: 0em;
+  background-color: transparent;
+}
+
+.nav-bottom::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.nav-bottom > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  padding: 0px 10px;
+  color: #e6edf3;
+  white-space: nowrap;
+  cursor: pointer;
+}
