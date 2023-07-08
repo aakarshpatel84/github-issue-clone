@@ -25,8 +25,8 @@ const Navbar = () => {
           </div>
 
           <div className="left-third">
-            <p>apple /&#160;</p>
-            <p>crup</p>
+              <p>roberodin /</p>
+            <p>ha-samsungtv-custom</p>
           </div>
         </div>
 
